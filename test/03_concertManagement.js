@@ -134,7 +134,7 @@ contract('Concert management functions', function (accounts) {
     // function useTicket(uint _ticketId)
     await tryCatch(TicketingSystemInstance.useTicket(1, {from: accounts[5]}), errTypes.revert);
     // Trying to use ticket before the day of the event
-    //await tryCatch(TicketingSystemInstance.useTicket(1, {from: accounts[3]}), errTypes.revert);
+    await tryCatch(TicketingSystemInstance.useTicket(1, {from: accounts[3]}), errTypes.revert);
     // Trying to use ticket before the venue validated the event
     await tryCatch(TicketingSystemInstance.useTicket(2, {from: accounts[4]}), errTypes.revert);
      
@@ -144,9 +144,9 @@ contract('Concert management functions', function (accounts) {
     await TicketingSystemInstance.useTicket(2, {from: accounts[4]})
 
     // Verifying ticket infos
-    //ticketInfo = await TicketingSystemInstance.ticketsRegister(2)
-    //assert.equal(ticketInfo.isAvailable, false)
-    //assert.equal(ticketInfo.owner, 0x0000)
+    ticketInfo = await TicketingSystemInstance.ticketsRegister(2)
+    assert.equal(ticketInfo.isAvailable, false)
+    assert.equal(ticketInfo.owner, 0x0000)
     })
 
 
