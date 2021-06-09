@@ -1,8 +1,8 @@
 # truffle-testing
 
-A TD to learn how to use Truffle tests. This repo only has a test folder.
+The purpose is to learn how to use Truffle tests. This repo only has a test folder.
 
-Your mission is to write a contract that passes all the tests when doing "truffle test".
+My mission is to write a contract that passes all the tests when doing "truffle test".
 
 These tests were written with:
 * Truffle v5.0.8 (core: 5.0.8)
@@ -11,7 +11,7 @@ These tests were written with:
 * Web3.js v1.0.0-beta.37
 
 # Context
-The objective of this TD is for you to write a simple smart contract to manage the ticketing process for concerts. A lot of tools exists today to facilitate the relationship between artists and their audience:
+Write a simple smart contract to manage the ticketing process for concerts. A lot of tools exists today to facilitate the relationship between artists and their audience:
 * Bandcamp/Society6 to sell mp3/merch
 * Distrokid/CD Baby to distribute digitally their music
 * Facebook/Instagram to promote content
